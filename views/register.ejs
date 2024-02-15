@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Sign in & Sign up Form</title>
+  </head>
+  <body>
+
+    
+
+    <div class="container">
+
+            
+              <div class="logoimage">
+                <img src="/css/LogoVa.png" style="width: 15%; margin-bottom:10px; margin-right: 800px;">
+
+                <img src="/css/LogoVa.png" style="width: 15%;position:absolute; margin-bottom:10px; margin-left: 245px;">
+              </div>
+
+              <div class="forms-container">
+              <div class="signin-signup">
+              <form  method="post"  action="/login" class="sign-in-form">
+                  <h2 class="title">Sign in</h2>
+                  <div class="input-field">
+                  <i class="fas fa-user"></i>
+                  <input type="email" name="email" placeholder="Email" />
+                  </div>
+                  <div class="input-field">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" name="password" placeholder="Password" />
+                </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+
+
+
+          </form>
+
+          <div class="popup">
+            <h1 style="color: red"> <%= password %> </h1>
+            <h1 style="color: red"> <%= email %> </h1>
+          </div>
+
+          <form action="/register" class="sign-up-form" method="post">
+
+
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" placeholder="Username"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="number" name="number" placeholder="Phone number"/>
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" name="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="password" placeholder="Password" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" name="cpassword" placeholder="Confirm Password" />
+            </div>
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Welcome to the visual online classes signup and Hurry up 
+              don't miss the golden oppurtunity!!
+            </p>
+            <button class="btn transparent" id="sign-up-btn">
+              Sign up
+            </button>
+          </div>
+          <img src="/css/logo2.png" class="image" alt="" style="margin-bottom: 100px" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+              Welcome back to the visual online classes signin and don't 
+              be late we are waiting!!
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Sign in
+            </button>
+          </div>
+          <img src="/css/logoo3.png" class="image" alt="" style="width: 70%; margin-bottom: 100px" />
+        </div>
+      </div>
+    </div>
+
+    <script src="/css/app.js"></script>
+  </body>
+</html>
